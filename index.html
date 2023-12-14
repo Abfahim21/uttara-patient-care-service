@@ -11,282 +11,252 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!--jQuery CDN-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Bootstrap Icons -->
+    <!-- Bootstrap Icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- CSS Link -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header-area overlay">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container">
-          <a href="#home" class="navbar-brand">উত্তরা পেশেন্ট কেয়ার সার্ভিস</a>
-
+    <!--Navbar Section Starts from here-->
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 fixed-top">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="#">উত্তরা পেশেন্ট কেয়ার সার্ভিস</a>
           <button
+            class="navbar-toggler"
             type="button"
-            class="navbar-toggler collapsed"
-            data-toggle="collapse"
-            data-target="#main-nav"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <span class="menu-icon-bar"></span>
-            <span class="menu-icon-bar"></span>
-            <span class="menu-icon-bar"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#home"
+                  ><i class="fa-solid fa-house px-2"></i>Home</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#about"
+                  ><i class="fa-solid fa-address-card px-2"></i>About</a
+                >
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><i class="fa-solid fa-user-doctor px-2"></i>
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ফিজিওথেরাপী</a></li>
+                  <li><a class="dropdown-item" href="#">নার্সিং কেয়ার</a></li>
+                  <li><a class="dropdown-item" href="#">ব্রাদার কেয়ার</a></li>
+                  <li><a class="dropdown-item" href="#">পেশেন্ট কেয়ার</a></li>
+                  <li><a class="dropdown-item" href="#">আয়া সার্ভিস</a></li>
+                  <li><a class="dropdown-item" href="#"> বয় সার্ভিস</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><i class="fa-solid fa-building px-2"></i>
+                  Departments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ফিজিওথেরাপী</a></li>
+                  <li><a class="dropdown-item" href="#">ব্রাদার কেয়ার</a></li>
+                  <li><a class="dropdown-item" href="#">পেশেন্ট কেয়ার</a></li>
+                  <li><a class="dropdown-item" href="#">আয়া সার্ভিস</a></li>
+                  <li><a class="dropdown-item" href="#">ওয়াড বয় সার্ভিস</a></li>
+                </ul>
+              </li>
 
-          <div
-            id="main-nav"
-            class="collapse navbar-collapse justify-content-end"
-          >
-            <ul class="navbar-nav">
-              <li><a href="#home" class="nav-item nav-link active">Home</a></li>
-              <li><a href="#about" class="nav-item nav-link">About Us</a></li>
-              <li class="dropdown">
-                <a
-                  href="#services"
-                  class="nav-item nav-link"
-                  data-toggle="dropdown"
-                  >Services</a
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#contact"
+                  ><i class="fa-solid fa-phone px-2"></i>Contact</a
                 >
-                <div class="dropdown-menu">
-                  <a href="#dropdown1" class="dropdown-item">Dropdown Item 1</a>
-                  <a href="#dropdown2" class="dropdown-item">Dropdown Item 2</a>
-                  <a href="#dropdown3" class="dropdown-item">Dropdown Item 3</a>
-                </div>
               </li>
-              <li class="dropdown">
-                <a
-                  href="#portfolio"
-                  class="nav-item nav-link"
-                  data-toggle="dropdown"
-                  >Portfolio</a
-                >
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">Dropdown Item 1</a>
-                  <a href="#" class="dropdown-item">Dropdown Item 2</a>
-                  <a href="#" class="dropdown-item">Dropdown Item 3</a>
-                  <a href="#" class="dropdown-item">Dropdown Item 4</a>
-                  <a href="#" class="dropdown-item">Dropdown Item 5</a>
-                </div>
-              </li>
-              <li><a href="#contact" class="nav-item nav-link">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <div class="banner">
-        <div class="container">
-          <h1>উত্তরা পেশেন্ট কেয়ার সার্ভিস</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            elit ex. Etiam elementum lectus et tempor molestie.
-          </p>
-          <a href="#content" class="button button-primary">Learn More</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section id="content" class="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec elit ex. Etiam elementum lectus et tempor molestie.
-                Pellentesque vestibulum dui sit amet dui volutpat sollicitudin.
-                Etiam non erat finibus, iaculis nunc vel, convallis eros. Etiam
-                efficitur tempor dui, vitae fringilla ipsum tristique quis.
-                Aliquam erat volutpat. Cras ullamcorper ex et viverra vulputate.
-                Nam lectus ligula, pretium nec risus nec, ultricies fringilla
-                mauris. Proin quis venenatis neque, iaculis porta nulla.
-              </p>
-            </div>
-            <div class="col-md-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec elit ex. Etiam elementum lectus et tempor molestie.
-                Pellentesque vestibulum dui sit amet dui volutpat sollicitudin.
-                Etiam non erat finibus, iaculis nunc vel, convallis eros. Etiam
-                efficitur tempor dui, vitae fringilla ipsum tristique quis.
-                Aliquam erat volutpat. Cras ullamcorper ex et viverra vulputate.
-                Nam lectus ligula, pretium nec risus nec, ultricies fringilla
-                mauris. Proin quis venenatis neque, iaculis porta nulla.
-              </p>
-            </div>
-            <div class="col-md-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec elit ex. Etiam elementum lectus et tempor molestie.
-                Pellentesque vestibulum dui sit amet dui volutpat sollicitudin.
-                Etiam non erat finibus, iaculis nunc vel, convallis eros. Etiam
-                efficitur tempor dui, vitae fringilla ipsum tristique quis.
-                Aliquam erat volutpat. Cras ullamcorper ex et viverra vulputate.
-                Nam lectus ligula, pretium nec risus nec, ultricies fringilla
-                mauris. Proin quis venenatis neque, iaculis porta nulla.
-              </p>
-            </div>
+    </div>
+    <div class="hero container-fluid">
+      <div class="container-xxl">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 text-center">
+            <h2 class="hero-starting-text">
+              Compassionate Care<br />
+              Trusted Support
+            </h2>
+            <span class="welcome-text">Welcome to</span>
+            <h1 class="hero-text">Uttara Patient Care Services</h1>
+          </div>
+          <div class="col-lg-6 py-4">
+            <img
+              class="img-fluid rounded-4 shadow"
+              src="./img/doctor.jpg"
+              alt="Doctor patient image"
+            />
           </div>
         </div>
-      </section>
-    </main>
-    <div class="contact">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d383.51675965201434!2d90.37111407049828!3d23.866670063760303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c3f909b09a13%3A0xd0ea76e9f4176f86!2sRd%201A%2C%20Dhaka%201230!5e0!3m2!1sen!2sbd!4v1702449703431!5m2!1sen!2sbd"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      </div>
     </div>
+    <!-- Social Media Section -->
 
-    <!-- Footer section starts from here -->
-    <div class="container-fluid my-5">
-      <div class="container-xxl">
-        <footer
-          class="text-center text-lg-start text-white"
-          style="background-color: #1c2331"
-        >
-          <!-- Section: Social media -->
+    <!-- Footer Section starts from-->
+    <div class="footer">
+      <div class="social-media container-fluid bg-dark text-white">
+        <div class="container-xxl">
           <section
-            class="d-flex justify-content-between p-4"
-            style="background-color: #6351ce"
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-white"
           >
             <!-- Left -->
             <div class="me-5">
-              <span class="text-center"
-                >Get connected with us on social networks:</span
-              >
+              <span>Get connected with us on social networks:</span>
             </div>
-            <!-- Left -->
-
             <!-- Right -->
             <div>
-              <a href="" class="text-white text-decoration-none me-4">
-                <i class="bi bi-facebook"></i>
+              <a href="" class="me-2 text-reset text-decoration-none">
+                <i class="fa-brands fa-facebook"></i>
               </a>
-              <a href="" class="text-white text-decoration-none me-4">
-                <i class="bi bi-whatsapp"></i>
+              <a href="" class="me-2 text-reset text-decoration-none">
+                <i class="fa-brands fa-instagram"></i>
               </a>
-              <a href="" class="text-white text-decoration-none me-4">
-                <i class="bi bi-instagram"></i>
+              <a href="" class="me-2 text-reset text-decoration-none">
+                <i class="fa-brands fa-facebook-messenger"></i>
+              </a>
+              <a href="" class="me-2 text-reset text-decoration-none">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="" class="me-2 text-reset">
+                <i class="fa-brands fa-youtube"></i>
               </a>
             </div>
-            <!-- Right -->
           </section>
-          <!-- Section: Social media -->
-
-          <!-- Section: Links  -->
-          <section class="">
-            <div class="container text-center text-md-start mt-5">
-              <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <h6 class="text-uppercase fw-bold">
-                    উত্তরা পেশেন্ট কেয়ার সার্ভিস
-                  </h6>
-                  <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-                  <p>
-                    Here you can use rows and columns to organize your footer
-                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                  </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold">Products</h6>
-                  <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-                  <p>
-                    <a href="#!" class="text-white">MDBootstrap</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-white">MDWordPress</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-white">BrandFlow</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-white">Bootstrap Angular</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold">Useful links</h6>
-                  <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-                  <p>
-                    <a href="#!" class="text-white">Your Account</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-white">Become an Affiliate</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-white">Shipping Rates</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-white">Help</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold">Contact</h6>
-                  <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-                  <p>
-                    <i class="fas fa-home mr-3"></i>সেক্টর-৭, রোড-২৯,
-                    বাড়ি-৫(নীচতলা), উত্তরা, ঢাকা
-                  </p>
-                  <p class="pr-3">
-                    <i class="bi bi-envelope"></i>mk7865652@gmail.com
-                  </p>
-                  <p><i class="bi bi-telephone"></i>+8801787-976790</p>
-                  <p><i class="bi bi-telephone"></i>+8801714-219727</p>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-            </div>
-          </section>
-          <!-- Section: Links  -->
-
-          <!-- Copyright -->
-          <div
-            class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2)"
-          >
-            © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/"
-              >MDBootstrap.com</a
-            >
-          </div>
-          <!-- Copyright -->
-        </footer>
+        </div>
       </div>
+
+      <footer class="text-center text-white bg-dark text-muted">
+        <!-- Section: Links  -->
+        <section class="text-secondary">
+          <div class="container text-center text-md-start pt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="fw-bold mb-4">উত্তরা পেশেন্ট কেয়ার সার্ভিস</h6>
+                <p>
+                  Committed to compassion, our patient care service ensures
+                  personalized attention, fostering healing with empathy and
+                  expertise
+                </p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p>
+                  <a href="#!" class="text-reset">Angular</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">React</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Vue</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Laravel</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p>
+                  <i class="fas fa-home me-3"></i> House No-5 (Ground Floor),
+                  Sector-7, Road-29, Uttara, Dhaka
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  <a
+                    class="text-reset text-decoration-none"
+                    href="mailto:mk7865652@gmail.com"
+                    >mk7865652@gmail.com</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-none text-reset"
+                    href="tel:+8801911689360"
+                  >
+                    <i class="fas fa-phone me-3"></i> +8801911-689360
+                  </a>
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-none text-reset"
+                    href="tel:+8801714-219727"
+                  >
+                    <i class="fas fa-phone me-3"></i> +8801714-219727
+                  </a>
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+        <div
+          class="text-center p-4 text-secondary"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2024 Copyright: Uttara Patient Care Service
+        </div>
+      </footer>
+      <!-- Footer -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
