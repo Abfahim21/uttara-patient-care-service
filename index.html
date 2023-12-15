@@ -26,85 +26,23 @@
     />
     <!-- CSS Link -->
     <link rel="stylesheet" href="./style.css" />
+    <!--JQuery CDN-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#navbar").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
   <body>
-    <!--Navbar Section Starts from here-->
-    <div class="navbar">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 fixed-top">
-        <div class="container-xxl">
-          <a class="navbar-brand" href="#">উত্তরা পেশেন্ট কেয়ার সার্ভিস</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#home"
-                  ><i class="fa-solid fa-house"></i> Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about"
-                  ><i class="fa-solid fa-address-card"></i> About</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  ><i class="fa-solid fa-user-doctor"></i>
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">ফিজিওথেরাপী</a></li>
-                  <li><a class="dropdown-item" href="#">নার্সিং কেয়ার</a></li>
-                  <li><a class="dropdown-item" href="#">ব্রাদার কেয়ার</a></li>
-                  <li><a class="dropdown-item" href="#">পেশেন্ট কেয়ার</a></li>
-                  <li><a class="dropdown-item" href="#">আয়া সার্ভিস</a></li>
-                  <li><a class="dropdown-item" href="#"> বয় সার্ভিস</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  ><i class="fa-solid fa-building px-2"></i>
-                  Departments
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">ফিজিওথেরাপী</a></li>
-                  <li><a class="dropdown-item" href="#">ব্রাদার কেয়ার</a></li>
-                  <li><a class="dropdown-item" href="#">পেশেন্ট কেয়ার</a></li>
-                  <li><a class="dropdown-item" href="#">আয়া সার্ভিস</a></li>
-                  <li><a class="dropdown-item" href="#">ওয়াড বয় সার্ভিস</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#contact"
-                  ><i class="fa-solid fa-phone px-2"></i>Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!--Hero Section Starts from here-->
+    <!--Header-->
+    <div id="navbar"></div>
+    <!--Hero Section-->
     <div class="hero container-fluid">
       <div class="container-xxl">
         <div class="row justify-content-center align-items-center">
@@ -126,7 +64,7 @@
         </div>
       </div>
     </div>
-    <!-- Doctor Details starts from here-->
+    <!-- Doctor Deatails-->
     <div class="doctor container-fluid bg-dark text-light py-5">
       <div class="container-xxl">
         <div
@@ -134,9 +72,10 @@
         >
           <div class="col-lg-6">
             <div class="about-text">
-              <h3>মোঃ রায়হান মুন্সী</h3>
-              <h4>Doctor</h4>
-              <p>
+              <h3 class="doctor-name">মোঃ রায়হান মুন্সী</h3>
+
+              <h4 class="doctor-des">Doctor</h4>
+              <p class="doc-des2">
                 Dr. Raihan Munshi, a compassionate physician at Uttara Patient
                 Care Service, embodies healthcare excellence. Rooted in Uttara,
                 his commitment to accessible and personalized medical care
@@ -148,7 +87,7 @@
                 seamlessly blending modern medical practices with a genuine
                 passion for the well-being of Uttara's community.
               </p>
-              <h4>On EMERGENCY</h4>
+              <h4 class="text-danger">EMERGENCY CONTACT</h4>
               <p>
                 <a
                   class="text-decoration-none text-reset"
@@ -164,7 +103,7 @@
               <img
                 class="img-fluid rounded-4 shadow"
                 src="./img/doctor-profile.jpg"
-                alt="Doctor's image"
+                alt="Doctor Raihan Munhi"
               />
             </div>
           </div>
@@ -172,137 +111,8 @@
       </div>
     </div>
 
-    <!-- Footer Section starts from-->
-    <div class="footer">
-      <div class="social-media container-fluid bg-dark text-white">
-        <div class="container-xxl">
-          <section
-            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-white"
-          >
-            <!-- Left -->
-            <div class="me-5">
-              <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Right -->
-            <div>
-              <a href="" class="me-2 text-reset text-decoration-none">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="" class="me-2 text-reset text-decoration-none">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="" class="me-2 text-reset text-decoration-none">
-                <i class="fa-brands fa-facebook-messenger"></i>
-              </a>
-              <a href="" class="me-2 text-reset text-decoration-none">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="" class="me-2 text-reset">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <footer class="text-center text-white bg-dark text-muted">
-        <!-- Section: Links  -->
-        <section class="text-secondary">
-          <div class="container text-center text-md-start pt-5">
-            <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="fw-bold mb-4">উত্তরা পেশেন্ট কেয়ার সার্ভিস</h6>
-                <p>
-                  Committed to compassion, our patient care service ensures
-                  personalized attention, fostering healing with empathy and
-                  expertise
-                </p>
-              </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-                <p>
-                  <a href="#!" class="text-reset">Angular</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">React</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Vue</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Laravel</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" class="text-reset">Pricing</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Settings</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Orders</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Help</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p>
-                  <i class="fas fa-home me-3"></i> House No-5 (Ground Floor),
-                  Sector-7, Road-29, Uttara, Dhaka
-                </p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  <a
-                    class="text-reset text-decoration-none"
-                    href="mailto:mk7865652@gmail.com"
-                    >mk7865652@gmail.com</a
-                  >
-                </p>
-                <p>
-                  <a
-                    class="text-decoration-none text-reset"
-                    href="tel:+8801911689360"
-                  >
-                    <i class="fas fa-phone me-3"></i> +8801911-689360
-                  </a>
-                </p>
-                <p>
-                  <a
-                    class="text-decoration-none text-reset"
-                    href="tel:+8801714-219727"
-                  >
-                    <i class="fas fa-phone me-3"></i> +8801714-219727
-                  </a>
-                </p>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-          </div>
-        </section>
-        <!-- Section: Links  -->
-        <div
-          class="text-center p-4 text-secondary"
-          style="background-color: rgba(0, 0, 0, 0.05)"
-        >
-          © 2024 Copyright: Uttara Patient Care Service
-        </div>
-      </footer>
-      <!-- Footer -->
-    </div>
+    <!-- Footer Section-->
+    <div id="footer"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
