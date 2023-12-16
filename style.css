@@ -345,3 +345,10 @@ about Section
 .about {
   margin-top: 150px;
 }
+/*********************************
+phy Section
+*********************************/
+.phy {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
