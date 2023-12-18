@@ -391,4 +391,29 @@ phy Section
     padding-top: 50px;
     padding-bottom: 0px;
   }
+  h2.map-header {
+    padding: 20px;
+    font-size: 30px;
+  }
+  h4.doctor-des {
+    font-size: 22px;
+  }
+  .about {
+    margin-top: 100px;
+  }
+  .phy {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .care-section-title h2 {
+    font-size: 30px;
+  }
+  .ambulance {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  .hos-ins {
+    padding-top: 90px;
+    padding-bottom: 0px;
+  }
 }
