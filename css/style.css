@@ -90,6 +90,7 @@ span.welcome-text {
 h3.doctor-name {
   font-size: 50px;
   font-weight: 500;
+  cursor: pointer;
 }
 h4.doctor-des {
   font-size: 30px;
@@ -416,4 +417,27 @@ phy Section
     padding-top: 90px;
     padding-bottom: 0px;
   }
+}
+.change-color:hover {
+  color: #05c46b;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.g {
+  color: #4285f4;
+}
+.o1 {
+  color: #ea4335;
+}
+.o2 {
+  color: #fbbc05;
+}
+.g2 {
+  color: #4285f4;
+}
+.l {
+  color: #34a853;
+}
+.e {
+  color: #ea4335;
 }
