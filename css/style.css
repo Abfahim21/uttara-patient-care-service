@@ -423,6 +423,10 @@ phy Section
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+.change-color-blue:hover {
+  color: #4285f4;
+  transition: 0.3s ease-in-out;
+}
 .g {
   color: #4285f4;
 }
@@ -440,4 +444,7 @@ phy Section
 }
 .e {
   color: #ea4335;
+}
+.emergency {
+  color: #dc3545;
 }
